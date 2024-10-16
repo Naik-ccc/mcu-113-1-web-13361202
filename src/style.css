@@ -8,3 +8,8 @@ h3 {
   border-width: 1px;
   width: 250px;
 }
+
+input[type="text"] {
+  width: 250px;
+  height: 25px;
+}
