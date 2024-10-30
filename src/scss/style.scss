@@ -8,36 +8,42 @@ h3 {
   color: rgba(0, 0, 0, 0.8);
 }
 
-section.body {
-  width: 90%;
-  margin: 0 auto;
-}
+section{
+ &.body {
+   width: 90%;
+   margin: 0 auto;
+ }
 
 nav {
   margin-bottom: 10px;
-}
 
 ul {
   padding-left: 0;
   list-style: none;
   display: flex;
   justify-content: space-between;
-}
 
-ul > li {
-  border: 1px solid #ccc;
-  display: inline-block;
-  padding: 8px;
-  width: 80px;
-  text-align: center;
-}
+   > li {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 8px;
+    width: 80px;
+    text-align: center;
+  }
+ }
 
-a,
-a:active,
-a:hover,
-a:focus {
-  color: black;
-  text-decoration: none;
+  a {
+    color: black;
+    text-decoration: none;
+
+ 
+    &:active,
+    &:hover,
+    &:focus {
+     color: black;
+     text-decoration: none;
+    }
+  }
 }
 
 input[type="text"] {
@@ -49,54 +55,57 @@ table {
   border-collapse: collapse;
   width: 100%;
   margin: 10px 0;
-}
 
 th,
 td {
   height: 30px;
 }
 
-table th {
+th {
   background-color: #777;
   color: white;
 }
 
-tr:hover {
-  background-color: yellow;
-}
+tr{
 
-tr > td {
+  &:hover {
+    background-color: yellow;
+  }
+
+> td {
   padding: 8px;
 }
+}
 
-td.id {
+&.id {
   width: 120px;
   text-align: center;
 }
 
-td.company {
+&.company {
   width: 150px;
   text-align: center;
 }
 
-td.price {
+&.price {
   text-align: right;
   width: 100px;
 }
-
-footer {
-  margin-top: 20px;
 }
-
 .card-container {
   display: flex;
   flex-direction: row;
   gap: 10px;
-}
 
 .card {
   border: solid 1px #999;
   padding: 10px;
   border-radius: 8px;
   flex-basis: 250px;
+}
+}
+}
+
+footer {
+  margin-top: 20px;
 }
