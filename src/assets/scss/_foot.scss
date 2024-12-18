@@ -1,4 +1,4 @@
-footer{
+foot{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,12 +6,12 @@ footer{
     row-gap: 30px;
     padding: 40px 60px;
 
-    .top-footer{
+    .top-foot{
         font-size: 25px;
         font-weight: 600;
     }
 
-    .footer-menu{
+    .foot-menu{
         display: flex;
 
         .menu-item{
@@ -26,21 +26,13 @@ footer{
         }
     }
 
-    .footer-icons{
+    .foot-icons{
         display: flex;
         gap: 30px;
     }
 
-    .bottom-footer{
+    .bottom-foot{
         font-size: 14px;
         margin-top: 10px;
-    }
-
-    .footer-icon{
-        position: fixed;
-        bottom: 20px;
-        left: 20px;
-        display: flex;
-        gap: 30px;
     }
 }
